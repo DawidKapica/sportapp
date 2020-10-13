@@ -17,11 +17,15 @@
 
     <properties>
         <java.version>11</java.version>
+        <apt.version>1.1.2</apt.version>
         <h2.version>1.4.200</h2.version>
+        <specification-arg-resolver.version>2.6.2</specification-arg-resolver.version>
         <mapstruct.version>1.4.0.Final</mapstruct.version>
         <hibernate-jpamodelgen.version>5.4.12.Final</hibernate-jpamodelgen.version>
         <jjwt.version>0.9.1</jjwt.version>
         <assertj-core.version>3.15.0</assertj-core.version>
+        <querydsl.version>2.5.0</querydsl.version>
+
 
     </properties>
 
@@ -96,17 +100,7 @@
             <artifactId>spring-security-test</artifactId>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
@@ -114,14 +108,17 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
-        </dependency>
-        <dependency>
             <groupId>io.jsonwebtoken</groupId>
             <artifactId>jjwt</artifactId>
             <version>${jjwt.version}</version>
         </dependency>
+        <dependency>
+            <groupId>net.kaczmarzyk</groupId>
+            <artifactId>specification-arg-resolver</artifactId>
+            <version>${specification-arg-resolver.version}</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
@@ -160,6 +157,11 @@
                     </compilerArgs>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
         </plugins>
     </build>
 

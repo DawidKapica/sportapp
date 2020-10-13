@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
+import java.time.LocalDate;
 
 @Data
 @NoArgsConstructor
@@ -23,4 +24,7 @@ public class TrainingDto extends BaseGeneratedIdDto<Integer> implements Persista
 
     @NotNull
     private Integer exerciseId;
+
+    private LocalDate trainingDate;
+
 }

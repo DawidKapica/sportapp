@@ -19,5 +19,8 @@ public class NutritionalProductDto extends BaseGeneratedIdDto<Integer> implement
     private String name;
 
     @NotNull
-    private NutritionalProductDto nutritionalProductCategory;
+    private Integer calorificValue;
+
+    @NotNull
+    private NutritionalProductCategoryDto nutritionalProductCategory;
 }

@@ -19,7 +19,6 @@ public final class RestMappings {
     public static final String SPORT_FACILITY = "/sport-facilities";
     public static final String SPORT_FACILITY_CATEGORY = "/sport-facility-categories";
     public static final String TRAINING = "/trainings";
-    public static final String USER_DETAIL_DATE = "/user-detail-dates";
     public static final String USER_DETAIL = "/user-details";
     public static final String USER = "/users";
     public static final String USER_PLANS = "/user-plans";

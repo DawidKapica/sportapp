@@ -1,6 +1,6 @@
 package dawidkapica.pracadyplomowa.sportapp.service.serviceImpl;
 
-import dawidkapica.pracadyplomowa.sportapp.coreLibrary.BaseCrudService;
+import dawidkapica.pracadyplomowa.sportapp.coreLibrary.BaseSpecificationCrudService;
 import dawidkapica.pracadyplomowa.sportapp.dto.NutritionalProductDto;
 import dawidkapica.pracadyplomowa.sportapp.entities.NutritionalProductEntity;
 import dawidkapica.pracadyplomowa.sportapp.mapper.NutritionalProductMapper;
@@ -9,7 +9,7 @@ import dawidkapica.pracadyplomowa.sportapp.service.NutritionalProductService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class NutritionalProductServiceImpl extends BaseCrudService<NutritionalProductDto, NutritionalProductEntity, Integer, NutritionalProductRepository>
+public class NutritionalProductServiceImpl extends BaseSpecificationCrudService<NutritionalProductDto, NutritionalProductEntity, Integer, NutritionalProductRepository>
         implements NutritionalProductService {
 
     public NutritionalProductServiceImpl(NutritionalProductRepository repository, NutritionalProductMapper mapper) {

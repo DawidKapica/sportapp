@@ -8,7 +8,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "Expert")
+@Table(name = "ExpertSpecialisation")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

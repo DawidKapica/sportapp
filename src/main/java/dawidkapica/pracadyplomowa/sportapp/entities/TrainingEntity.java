@@ -5,10 +5,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.time.LocalDate;
 
 @Entity
 @Table(name = "Training")
@@ -26,5 +24,8 @@ public class TrainingEntity extends AbstractPersistable<Integer> {
     @ManyToOne
     @JoinColumn(name = "exercise_id")
     private ExerciseEntity exercise;
+
+    @Column(name = "date")
+    private LocalDate trainingDate;
 
 }
