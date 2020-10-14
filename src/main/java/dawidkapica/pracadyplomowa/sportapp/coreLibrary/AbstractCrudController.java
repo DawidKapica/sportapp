@@ -11,15 +11,15 @@ import javax.persistence.EntityNotFoundException;
 import java.io.Serializable;
 
 @RestController
-public abstract class BaseCrudController <T extends PersistableDto<ID>, ID extends Serializable> {
+public abstract class AbstractCrudController <T extends PersistableDto<ID>, ID extends Serializable> {
 
 
     protected static final String ENTITY_EXISTS_EXCEPTION_MSG = "Entity already exists with id=";
     protected static final String ENTITY_NOT_FOUND_EXCEPTION_MSG = "Entity not found with id=";
 
-    private final CrudService<T, ID> service;
+    private final CrudServiceInterface<T, ID> service;
 
-    public BaseCrudController(CrudService<T, ID> service) {
+    public AbstractCrudController (CrudServiceInterface<T, ID> service) {
         this.service = service;
     }
 

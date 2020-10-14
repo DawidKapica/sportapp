@@ -1,7 +1,8 @@
 package dawidkapica.pracadyplomowa.sportapp.service;
 
-import dawidkapica.pracadyplomowa.sportapp.coreLibrary.CrudService;
+import dawidkapica.pracadyplomowa.sportapp.coreLibrary.SpecificationCrudServiceInterface;
 import dawidkapica.pracadyplomowa.sportapp.dto.ExerciseDto;
+import dawidkapica.pracadyplomowa.sportapp.entities.ExerciseEntity;
 
-public interface ExerciseService extends CrudService<ExerciseDto, Integer> {
+public interface ExerciseService extends SpecificationCrudServiceInterface<ExerciseDto, ExerciseEntity, Integer> {
 }

@@ -1,6 +1,6 @@
 package dawidkapica.pracadyplomowa.sportapp.service.serviceImpl;
 
-import dawidkapica.pracadyplomowa.sportapp.coreLibrary.BaseCrudService;
+import dawidkapica.pracadyplomowa.sportapp.coreLibrary.AbstractCrudService;
 import dawidkapica.pracadyplomowa.sportapp.dto.SportFacilitiesCategoryDto;
 import dawidkapica.pracadyplomowa.sportapp.entities.SportFacilitiesCategoryEntity;
 import dawidkapica.pracadyplomowa.sportapp.mapper.SportFacilitiesCategoryMapper;
@@ -9,7 +9,7 @@ import dawidkapica.pracadyplomowa.sportapp.service.SportFacilitiesCategoryServic
 import org.springframework.stereotype.Service;
 
 @Service
-public class SportFacilitiesCategoryServiceImpl extends BaseCrudService<SportFacilitiesCategoryDto, SportFacilitiesCategoryEntity, Integer, SportFacilitiesCategoryRepository>
+public class SportFacilitiesCategoryServiceImpl extends AbstractCrudService<SportFacilitiesCategoryDto, SportFacilitiesCategoryEntity, Integer, SportFacilitiesCategoryRepository>
         implements SportFacilitiesCategoryService {
 
     public SportFacilitiesCategoryServiceImpl(SportFacilitiesCategoryRepository repository, SportFacilitiesCategoryMapper mapper) {

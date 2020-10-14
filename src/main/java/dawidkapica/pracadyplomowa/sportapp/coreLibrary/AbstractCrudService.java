@@ -13,19 +13,19 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
-public abstract class BaseCrudService<
+public abstract class AbstractCrudService <
         T extends PersistableDto<ID>,
         E extends Persistable<ID>,
         ID extends Serializable,
-        R extends JpaRepository<E, ID>> implements CrudService<T, ID> {
+        R extends JpaRepository<E, ID>> implements CrudServiceInterface<T, ID> {
 
     @Autowired
     protected final R repository;
 
     @Autowired
-    protected final BaseMapper<T, E> mapper;
+    protected final MapperInterface<T, E> mapper;
 
-    public BaseCrudService(R repository, BaseMapper<T, E> mapper) {
+    public AbstractCrudService (R repository, MapperInterface<T, E> mapper) {
 //        super(repository, mapper);
         this.repository = repository;
         this.mapper = mapper;
@@ -89,19 +89,4 @@ public abstract class BaseCrudService<
         return repository.count();
     }
 
-
-//    @Override
-//    public List<T> findAll(Specification<E> specification) {
-//        return mapper.mapToDtoList(repository.findAll(specification));
-//    }
-//
-//    @Override
-//    public Page<T> findAll(Specification<E> specification, Pageable pageable) {
-//        return repository.findAll(specification, pageable).map(mapper::mapToDto);
-//    }
-//
-//    @Override
-//    public List<T> findAll(Specification<E> specification, Sort sort) {
-//        return mapper.mapToDtoList(repository.findAll(specification, sort));
-//    }
 }

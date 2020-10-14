@@ -9,7 +9,7 @@ import org.springframework.data.jpa.domain.Specification;
 import java.io.Serializable;
 import java.util.List;
 
-public interface SpecificationCrudService <T extends PersistableDto<ID>, U extends Persistable<ID>, ID extends Serializable> extends CrudService<T, ID> {
+public interface SpecificationCrudServiceInterface <T extends PersistableDto<ID>, U extends Persistable<ID>, ID extends Serializable> extends CrudServiceInterface<T, ID> {
 
     List<T> findAll(Specification<U> specification);
 

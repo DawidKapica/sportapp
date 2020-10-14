@@ -1,6 +1,6 @@
 package dawidkapica.pracadyplomowa.sportapp.mapper;
 
-import dawidkapica.pracadyplomowa.sportapp.coreLibrary.BaseMapper;
+import dawidkapica.pracadyplomowa.sportapp.coreLibrary.MapperInterface;
 import dawidkapica.pracadyplomowa.sportapp.dto.OpinionDto;
 import dawidkapica.pracadyplomowa.sportapp.entities.ExpertEntity;
 import dawidkapica.pracadyplomowa.sportapp.entities.OpinionEntity;
@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import javax.persistence.EntityNotFoundException;
 
 @Mapper
-public abstract class OpinionMapper implements BaseMapper<OpinionDto, OpinionEntity> {
+public abstract class OpinionMapper implements MapperInterface<OpinionDto, OpinionEntity> {
 
     @Autowired
     private UserRepository userRepository;

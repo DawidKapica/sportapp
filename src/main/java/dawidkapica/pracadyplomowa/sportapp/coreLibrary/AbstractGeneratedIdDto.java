@@ -8,7 +8,7 @@ import java.io.Serializable;
 
 @Data
 @JsonPropertyOrder({"id"})
-public abstract class BaseGeneratedIdDto<ID extends Serializable> implements PersistableDto<ID> {
+public abstract class AbstractGeneratedIdDto <ID extends Serializable> implements PersistableDto<ID> {
 
     @NotNull
     private ID id;

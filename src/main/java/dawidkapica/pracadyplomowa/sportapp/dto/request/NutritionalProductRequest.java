@@ -3,10 +3,10 @@ package dawidkapica.pracadyplomowa.sportapp.dto.request;
 import lombok.Data;
 
 @Data
-public class NutritionalProductListRequest {
+public class NutritionalProductRequest {
 
-    public Integer minCal;
-    public Integer maxCal;
+    public Integer minCal = Integer.MIN_VALUE;
+    public Integer maxCal = Integer.MAX_VALUE;
     public String search;
     public String name;
     public Integer calorificValue;

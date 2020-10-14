@@ -1,6 +1,6 @@
 package dawidkapica.pracadyplomowa.sportapp.mapper;
 
-import dawidkapica.pracadyplomowa.sportapp.coreLibrary.BaseMapper;
+import dawidkapica.pracadyplomowa.sportapp.coreLibrary.MapperInterface;
 import dawidkapica.pracadyplomowa.sportapp.dto.TrainingDto;
 import dawidkapica.pracadyplomowa.sportapp.entities.ExerciseEntity;
 import dawidkapica.pracadyplomowa.sportapp.entities.TrainingEntity;
@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import javax.persistence.EntityNotFoundException;
 
 @Mapper
-public abstract class TrainingMapper implements BaseMapper<TrainingDto, TrainingEntity> {
+public abstract class TrainingMapper implements MapperInterface<TrainingDto, TrainingEntity> {
 
     @Autowired
     private UserRepository userRepository;

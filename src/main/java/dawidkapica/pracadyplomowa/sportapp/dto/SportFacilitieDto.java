@@ -1,6 +1,6 @@
 package dawidkapica.pracadyplomowa.sportapp.dto;
 
-import dawidkapica.pracadyplomowa.sportapp.coreLibrary.BaseGeneratedIdDto;
+import dawidkapica.pracadyplomowa.sportapp.coreLibrary.AbstractGeneratedIdDto;
 import dawidkapica.pracadyplomowa.sportapp.coreLibrary.PersistableDto;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class SportFacilitieDto extends BaseGeneratedIdDto<Integer> implements PersistableDto<Integer> {
+public class SportFacilitieDto extends AbstractGeneratedIdDto<Integer> implements PersistableDto<Integer> {
 
 
     private boolean isPaid;

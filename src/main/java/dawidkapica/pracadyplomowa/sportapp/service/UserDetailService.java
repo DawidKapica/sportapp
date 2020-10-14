@@ -1,7 +1,8 @@
 package dawidkapica.pracadyplomowa.sportapp.service;
 
-import dawidkapica.pracadyplomowa.sportapp.coreLibrary.CrudService;
+import dawidkapica.pracadyplomowa.sportapp.coreLibrary.SpecificationCrudServiceInterface;
 import dawidkapica.pracadyplomowa.sportapp.dto.UserDetailDto;
+import dawidkapica.pracadyplomowa.sportapp.entities.UserDetailEntity;
 
-public interface UserDetailService extends CrudService<UserDetailDto, Integer> {
+public interface UserDetailService extends SpecificationCrudServiceInterface<UserDetailDto, UserDetailEntity,Integer> {
 }

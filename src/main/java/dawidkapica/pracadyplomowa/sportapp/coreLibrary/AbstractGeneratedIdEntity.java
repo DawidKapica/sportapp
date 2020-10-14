@@ -10,7 +10,7 @@ import javax.persistence.Version;
 import java.io.Serializable;
 
 @Data
-public abstract class BaseGeneratedIdEntity<ID extends Serializable> implements Persistable<ID> {
+public abstract class AbstractGeneratedIdEntity <ID extends Serializable> implements Persistable<ID> {
 
     private static final long serialVersionUID = 1L;
 

@@ -1,6 +1,6 @@
 package dawidkapica.pracadyplomowa.sportapp.mapper;
 
-import dawidkapica.pracadyplomowa.sportapp.coreLibrary.BaseMapper;
+import dawidkapica.pracadyplomowa.sportapp.coreLibrary.MapperInterface;
 import dawidkapica.pracadyplomowa.sportapp.dto.ConsumedFoodDto;
 import dawidkapica.pracadyplomowa.sportapp.entities.ConsumedFoodEntity;
 import dawidkapica.pracadyplomowa.sportapp.entities.NutritionalProductEntity;
@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import javax.persistence.EntityNotFoundException;
 
 @Mapper(uses = {PersonMapper.class, UserMapper.class, NutritionalProductMapper.class, LoginMapper.class})
-public abstract class ConsumedFoodMapper implements BaseMapper<ConsumedFoodDto, ConsumedFoodEntity> {
+public abstract class ConsumedFoodMapper implements MapperInterface<ConsumedFoodDto, ConsumedFoodEntity> {
 
     @Autowired
     private UserRepository userRepository;

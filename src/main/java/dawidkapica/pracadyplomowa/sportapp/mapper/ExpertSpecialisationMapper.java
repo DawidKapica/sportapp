@@ -1,6 +1,6 @@
 package dawidkapica.pracadyplomowa.sportapp.mapper;
 
-import dawidkapica.pracadyplomowa.sportapp.coreLibrary.BaseMapper;
+import dawidkapica.pracadyplomowa.sportapp.coreLibrary.MapperInterface;
 import dawidkapica.pracadyplomowa.sportapp.dto.ExpertSpecialisationDto;
 import dawidkapica.pracadyplomowa.sportapp.entities.ExpertEntity;
 import dawidkapica.pracadyplomowa.sportapp.entities.ExpertSpecialisationEntity;
@@ -14,7 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import javax.persistence.EntityNotFoundException;
 
 @Mapper
-public abstract class ExpertSpecialisationMapper implements BaseMapper<ExpertSpecialisationDto, ExpertSpecialisationEntity> {
+public abstract class ExpertSpecialisationMapper implements MapperInterface<ExpertSpecialisationDto, ExpertSpecialisationEntity> {
 
     @Autowired
     private ExpertRepository expertRepository;

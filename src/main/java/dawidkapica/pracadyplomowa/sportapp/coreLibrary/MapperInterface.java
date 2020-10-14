@@ -3,7 +3,7 @@ package dawidkapica.pracadyplomowa.sportapp.coreLibrary;
 import java.util.Collection;
 import java.util.List;
 
-public interface BaseMapper<D, E> {
+public interface MapperInterface <D, E> {
 
     D mapToDto(E entity);
 

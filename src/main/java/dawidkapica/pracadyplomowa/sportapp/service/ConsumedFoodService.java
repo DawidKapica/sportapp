@@ -1,7 +1,8 @@
 package dawidkapica.pracadyplomowa.sportapp.service;
 
-import dawidkapica.pracadyplomowa.sportapp.coreLibrary.CrudService;
+import dawidkapica.pracadyplomowa.sportapp.coreLibrary.SpecificationCrudServiceInterface;
 import dawidkapica.pracadyplomowa.sportapp.dto.ConsumedFoodDto;
+import dawidkapica.pracadyplomowa.sportapp.entities.ConsumedFoodEntity;
 
-public interface ConsumedFoodService extends CrudService<ConsumedFoodDto, Integer> {
+public interface ConsumedFoodService extends SpecificationCrudServiceInterface<ConsumedFoodDto, ConsumedFoodEntity, Integer> {
 }

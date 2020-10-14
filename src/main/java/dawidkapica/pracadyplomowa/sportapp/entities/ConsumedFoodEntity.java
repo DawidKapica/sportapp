@@ -1,7 +1,6 @@
 package dawidkapica.pracadyplomowa.sportapp.entities;
 
 
-import dawidkapica.pracadyplomowa.sportapp.coreLibrary.BaseGeneratedIdEntity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

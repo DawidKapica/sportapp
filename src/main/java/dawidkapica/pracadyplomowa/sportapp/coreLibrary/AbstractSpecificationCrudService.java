@@ -23,14 +23,14 @@ import java.util.List;
  */
 @Service
 @Slf4j
-public abstract class BaseSpecificationCrudService<
+public abstract class AbstractSpecificationCrudService <
         T extends PersistableDto<ID>,
         E extends Persistable<ID>,
         ID extends Serializable,
         R extends JpaRepository<E, ID> & JpaSpecificationExecutor<E>>
-        extends BaseCrudService<T, E, ID, R> implements SpecificationCrudService<T, E, ID> {
+        extends AbstractCrudService<T, E, ID, R> implements SpecificationCrudServiceInterface<T, E, ID> {
 
-    public BaseSpecificationCrudService(R repository, BaseMapper<T, E> mapper) {
+    public AbstractSpecificationCrudService (R repository, MapperInterface<T, E> mapper) {
         super(repository, mapper);
     }
 
