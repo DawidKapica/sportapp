@@ -72,9 +72,9 @@ INSERT INTO USER_DETAIL VALUES
 (2, 100, '2020-10-10', 3);
 
 INSERT INTO OPINION VALUES
-(1, 'opinia1', 1, 3),
-(2, 'opinia2', 1, 4),
-(3, 'opinia3', 2, 3),
-(4, 'opinia4', 2, 4);
+(1, 'opinia1', 1, 3, 1),
+(2, 'opinia2', 1, 4, 2),
+(3, 'opinia3', 2, 3, 5),
+(4, 'opinia4', 2, 4, 5);
 
 

@@ -16,9 +16,12 @@ public class SportFacilitieDto extends AbstractGeneratedIdDto<Integer> implement
 
 
     private boolean isPaid;
+
     private Double parallel;
+
     private Double equator;
 
+    //godziny otwarcia
 
     @NotNull
     @Size(max = 255)

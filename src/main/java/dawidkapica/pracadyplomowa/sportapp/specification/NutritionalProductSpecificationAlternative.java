@@ -7,7 +7,7 @@ import org.springframework.data.jpa.domain.Specification;
 
 
 //Alternative version of specification search
-public class NutritionalProductSpecificationAlternative {
+public class NutritionalProductSpecificationAlternative<T> {
 
     public Specification<NutritionalProductEntity> minCal(Integer minCal) {
 

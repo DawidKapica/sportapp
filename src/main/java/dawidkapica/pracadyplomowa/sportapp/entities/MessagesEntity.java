@@ -6,15 +6,14 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
-@Table(name = "Opinion")
+@Table(name = "Messages")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class OpinionEntity extends AbstractPersistable<Integer> {
-
-    private String content;
+public class MessagesEntity extends AbstractPersistable<Integer> {
 
     @ManyToOne
     @JoinColumn(name = "user_id")
@@ -24,8 +23,9 @@ public class OpinionEntity extends AbstractPersistable<Integer> {
     @JoinColumn(name = "expert_id")
     private ExpertEntity expert;
 
-    private Integer rate;
+    private LocalDateTime time;
 
-
+    @Column(name = "is_user_sender")
+    private Boolean isUserSender;
 
 }

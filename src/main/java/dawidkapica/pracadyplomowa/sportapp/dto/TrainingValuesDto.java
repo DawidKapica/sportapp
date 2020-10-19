@@ -7,26 +7,17 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
-import java.time.LocalDate;
+import java.time.Duration;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class TrainingDto extends AbstractGeneratedIdDto<Integer> implements PersistableDto<Integer> {
+public class TrainingValuesDto extends AbstractGeneratedIdDto<Integer> implements PersistableDto<Integer> {
 
     @NotNull
-    @Size(max = 255)
-    private String name;
+    private Integer parameterId;
 
-    @NotNull
-    private Integer userId;
+    private Integer value;
 
-    @NotNull
-    private Integer exerciseId;
-
-    private LocalDate trainingDate;
-
-    //czas trwania
-
+    private Duration duration;
 }

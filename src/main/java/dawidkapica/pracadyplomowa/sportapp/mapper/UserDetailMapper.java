@@ -17,28 +17,17 @@ public abstract class UserDetailMapper implements MapperInterface<UserDetailDto,
     @Autowired
     private UserRepository userRepository;
 
-//    @Autowired
-//    private UserDetailDateRepository userDetailDateRepository;
-
     @Override
     @Mapping(source = "user.id", target = "userId")
-//    @Mapping(source = "circumferenceAbdomen", target = "circumferenceAbdomen")
-//    @Mapping(source = "userDetailDate.id", target = "userDetailDateId")
+
     public abstract UserDetailDto mapToDto(UserDetailEntity entity);
 
     @Override
     @Mapping(source = "userId", target = "user")
-//    @Mapping(source = "circumferenceAbdomen", target = "circumferenceAbdomen")
-//    @Mapping(source = "userDetailDateId", target = "userDetailDate")
     public abstract UserDetailEntity mapToEntity(UserDetailDto dto);
 
     protected UserEntity userEntityFromId(Integer id) {
         return userRepository.findById(id).orElseThrow(EntityNotFoundException::new);
     }
-
-//    protected UserDetailDateEntity userDetailDateEntityFromId (Integer id) {
-//        return userDetailDateRepository.findById(id).orElseThrow(EntityNotFoundException::new);
-//    }
-
 
 }

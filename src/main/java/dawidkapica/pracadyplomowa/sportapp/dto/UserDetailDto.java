@@ -18,9 +18,22 @@ public class UserDetailDto extends AbstractGeneratedIdDto<Integer> implements Pe
     @Size(max = 255)
     private Integer circumferenceAbdomen;
 
+    //nowe
+    private Double weight;
+    private Double bicepsCircumference;
+    private Double forearmCircumference;
+    private Double chestCircumference;
+    private Double hipCircumference;
+    private Double thighCircumference;
+    private Double calfCircumference;
+    private Double neckCircumference;
+
+
     @NotNull
     private Integer userId;
 
     private LocalDate valueDate;
+
+
 
 }

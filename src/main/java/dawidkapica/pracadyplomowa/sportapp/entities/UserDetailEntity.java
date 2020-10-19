@@ -25,4 +25,28 @@ public class UserDetailEntity extends AbstractPersistable<Integer> {
     @Column(name = "value_date")
     private LocalDate valueDate;
 
+    //nowe
+    private Double weight;
+
+    @Column(name = "biceps_circumference")
+    private Double bicepsCircumference;
+
+    @Column(name = "forearm_circumference")
+    private Double forearmCircumference;
+
+    @Column(name = "chest_circumference")
+    private Double chestCircumference;
+
+    @Column(name = "hip_circumference")
+    private Double hipCircumference;
+
+    @Column(name = "thigh_circumference")
+    private Double thighCircumference;
+
+    @Column(name = "calf_circumference")
+    private Double calfCircumference;
+
+    @Column(name = "neck_circumference")
+    private Double neckCircumference;
+
 }

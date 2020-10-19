@@ -11,6 +11,8 @@ import org.springframework.data.jpa.domain.Specification;
         @Spec(path = "content", params = "content", spec = Like.class),
         @Spec(path = "userId", params = "userId", spec = Like.class),
         @Spec(path = "expertId", params = "expertId", spec = Like.class),
+        @Spec(path = "rate", params = "rate", spec = Like.class),
+
 })
 public interface OpinionSpecification extends Specification<OpinionEntity> {
 }

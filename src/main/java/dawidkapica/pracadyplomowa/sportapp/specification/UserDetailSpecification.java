@@ -9,6 +9,14 @@ import org.springframework.data.jpa.domain.Specification;
 
 @And({
         @Spec(path = "circumferenceAbdomen", params = "circumferenceAbdomen", spec = Like.class),
+        @Spec(path = "weight", params = "weight", spec = Like.class),
+        @Spec(path = "biceps_circumference", params = "biceps_circumference", spec = Like.class),
+        @Spec(path = "forearm_circumference", params = "forearm_circumference", spec = Like.class),
+        @Spec(path = "chest_circumference", params = "chest_circumference", spec = Like.class),
+        @Spec(path = "hip_circumference", params = "hip_circumference", spec = Like.class),
+        @Spec(path = "thigh_circumference", params = "thigh_circumference", spec = Like.class),
+        @Spec(path = "calf_circumference", params = "calf_circumference", spec = Like.class),
+        @Spec(path = "neck_circumference", params = "neck_circumference", spec = Like.class),
         @Spec(path = "userId", params = "userId", spec = Like.class),
         @Spec(
                 path = "valueDate",

@@ -18,8 +18,11 @@ public class UserPlanDto extends AbstractGeneratedIdDto<Integer> implements Pers
     private Integer userId;
 
     private String description;
+
     private Integer goal;
+
     private LocalDate startDate;
+
     private LocalDate endDate;
 
 }

@@ -14,6 +14,7 @@ import javax.validation.constraints.Size;
 public class ExpertDto extends PersonDto implements PersistableDto<Integer> {
 
     private String education;
+
     private String description;
 
     @NotNull

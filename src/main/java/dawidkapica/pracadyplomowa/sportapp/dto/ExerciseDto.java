@@ -20,6 +20,8 @@ public class ExerciseDto extends AbstractGeneratedIdDto<Integer> implements Pers
 
     private Integer caloriesBurnedInMinute;
 
+    private String exerciseDescription;
+
     @NotNull
     private ExerciseCategoryDto exerciseCategory;
 
