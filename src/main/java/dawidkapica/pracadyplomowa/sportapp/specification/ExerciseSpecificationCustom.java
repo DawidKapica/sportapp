@@ -1,13 +1,12 @@
 package dawidkapica.pracadyplomowa.sportapp.specification;
 
+import dawidkapica.pracadyplomowa.sportapp.entities.ExerciseEntity;
 import dawidkapica.pracadyplomowa.sportapp.entities.NutritionalProductCategoryEntity_;
 import dawidkapica.pracadyplomowa.sportapp.entities.NutritionalProductEntity;
 import dawidkapica.pracadyplomowa.sportapp.entities.NutritionalProductEntity_;
 import org.springframework.data.jpa.domain.Specification;
 
-
-//Alternative version of specification search
-public class NutritionalProductSpecificationAlternative extends GenericSpecification<NutritionalProductEntity> {
+public class ExerciseSpecificationCustom extends GenericSpecification<ExerciseEntity> {
 
     public Specification<NutritionalProductEntity> category(String category) {
         return (root, criteriaQuery, criteriaBuilder) ->{

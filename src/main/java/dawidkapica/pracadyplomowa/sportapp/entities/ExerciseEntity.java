@@ -24,4 +24,7 @@ public class ExerciseEntity extends AbstractPersistable<Integer> {
     @JoinColumn(name = "exercise_category")
     private ExerciseCategoryEntity exerciseCategory;
 
+    private String exerciseDescription;
+
+
 }

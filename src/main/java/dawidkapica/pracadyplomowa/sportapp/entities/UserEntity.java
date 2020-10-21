@@ -6,10 +6,9 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.util.Collection;
-import java.util.Collections;
 
 @Entity
-@Table(name = "User")
+@Table(name = "UserAccount")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
