@@ -6,10 +6,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.Table;
+import javax.persistence.*;
+import java.time.LocalDate;
+import java.time.LocalTime;
 
 @Entity
 @Table(name = "ConsumedFood")
@@ -27,4 +26,11 @@ public class ConsumedFoodEntity extends AbstractPersistable<Integer> {
     @ManyToOne
     @JoinColumn(name = "nutritional_product_id")
     private NutritionalProductEntity nutritionalProduct;
+
+    @Column(name = "date")
+    private LocalDate consumedFoodDate;
+
+    @Column(name = "time")
+    private LocalTime consumedFoodTime;
+
 }

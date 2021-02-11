@@ -16,7 +16,7 @@ import java.time.LocalDate;
 public class UserDetailEntity extends AbstractPersistable<Integer> {
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JoinColumn(name = "user_account_id")
     private  UserEntity user;
 
     @Column(name = "circumference_abdomen")

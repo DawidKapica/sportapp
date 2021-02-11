@@ -2,6 +2,7 @@ package dawidkapica.pracadyplomowa.sportapp.specification;
 
 import dawidkapica.pracadyplomowa.sportapp.entities.UserDetailEntity;
 import net.kaczmarzyk.spring.data.jpa.domain.Between;
+import net.kaczmarzyk.spring.data.jpa.domain.Equal;
 import net.kaczmarzyk.spring.data.jpa.domain.Like;
 import net.kaczmarzyk.spring.data.jpa.web.annotation.And;
 import net.kaczmarzyk.spring.data.jpa.web.annotation.Spec;
@@ -17,7 +18,7 @@ import org.springframework.data.jpa.domain.Specification;
         @Spec(path = "thigh_circumference", params = "thigh_circumference", spec = Like.class),
         @Spec(path = "calf_circumference", params = "calf_circumference", spec = Like.class),
         @Spec(path = "neck_circumference", params = "neck_circumference", spec = Like.class),
-        @Spec(path = "userId", params = "userId", spec = Like.class),
+        @Spec(path = "userId", params = "user_id", spec = Equal.class),
         @Spec(
                 path = "valueDate",
                 params = {"valueDateMin", "valueDateMax"},

@@ -32,15 +32,15 @@ INSERT INTO PERSON  VALUES
 
 
 INSERT INTO EXPERT VALUES
-('Jestem specjalistą 1', 'Politechnika', 1, 1),
-('Jestem specjalistą 2', 'Politechnika', 2, 2);
+('Jestem specjalistą 1', 'Politechnika', 'kontaktMail@gmail.com', 123321123, 1, 1),
+('Jestem specjalistą 2', 'Politechnika', 'kontaktMail2@gmail.com', 321321321, 2, 2);
 
 INSERT INTO EXPERT_SPECIALISATION  VALUES
 (1, 3, 1, 1),
 (2, 1, 1, 2),
 (3,2, 2, 2);
 
-INSERT INTO USER VALUES
+INSERT INTO USER_ACCOUNT VALUES
 (3, 3),
 (4, 4);
 
@@ -50,13 +50,14 @@ INSERT INTO EXERCISE VALUES
 (3, 33, 'bieganie halowe', 2);
 
 INSERT INTO NUTRITIONAL_PRODUCT VALUES
-(1, 100, 'jajko', 2),
-(2, 350, 'burger', 1);
+(1, 100, 20, 30, 'jajko', 20, 2),
+(2, 350,  50, 70,'burger', 45, 1);
+
 
 INSERT INTO CONSUMED_FOOD VALUES
-(1, 1, 1, 3),
-(2, 2, 2, 4),
-(3, 1, 2, 3);
+(1, '2020-10-10', null, 1, 1, 3),
+(2, '2020-10-10', null, 2, 2, 4),
+(3, '2020-11-11', null, 1, 2, 3);
 
 
 INSERT INTO TRAINING VALUES
@@ -68,13 +69,16 @@ INSERT INTO USER_PLAN VALUES
 (2, 'opis2', '2020-11-01', 70, '2021-01-07', 3);
 
 INSERT INTO USER_DETAIL VALUES
-(1, 80, '2020-01-01', 3),
-(2, 100, '2020-10-10', 3);
+(1, 101, 111, 121, 131, 140, 151, 161, 171, '2020-01-01', 80, 3),
+(2, 100, 110, 120, 130, 140, 150, 160, 170, '2020-10-10', 75, 3);
 
 INSERT INTO OPINION VALUES
 (1, 'opinia1', 1, 3, 1),
 (2, 'opinia2', 1, 4, 2),
 (3, 'opinia3', 2, 3, 5),
 (4, 'opinia4', 2, 4, 5);
+
+-- INSERT INTO ADMIN VALUES
+-- (1, 1);
 
 

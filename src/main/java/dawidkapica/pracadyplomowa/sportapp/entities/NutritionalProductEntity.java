@@ -19,6 +19,15 @@ public class NutritionalProductEntity extends AbstractPersistable<Integer> {
     @Column(name = "calorific_value")
     private Integer calorificValue;
 
+    @Column(name = "carbohydrates_value")
+    private Integer carbohydratesValue;
+
+    @Column(name = "protein_value")
+    private Integer proteinValue;
+
+    @Column(name = "fat_value")
+    private Integer fatValue;
+
     @ManyToOne
     @JoinColumn(name = "nutritional_category")
     private  NutritionalProductCategoryEntity nutritionalProductCategory;

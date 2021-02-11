@@ -14,3 +14,5 @@ import org.springframework.data.jpa.domain.Specification;
 })
 public interface PersonSpecification extends Specification<PersonEntity> {
 }
+
+

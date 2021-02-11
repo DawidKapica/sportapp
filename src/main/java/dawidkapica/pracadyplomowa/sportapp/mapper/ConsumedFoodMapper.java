@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.persistence.EntityNotFoundException;
 
-@Mapper(uses = {PersonMapper.class, UserMapper.class, NutritionalProductMapper.class, LoginMapper.class})
+@Mapper
 public abstract class ConsumedFoodMapper implements MapperInterface<ConsumedFoodDto, ConsumedFoodEntity> {
 
     @Autowired

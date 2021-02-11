@@ -4,6 +4,7 @@ import dawidkapica.pracadyplomowa.sportapp.dto.request.RequestInterface;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Persistable;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.io.Serializable;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public abstract class AbstractCrudControllerCustomSpecification <
         T extends PersistableDto<ID>,
         ID extends Serializable,

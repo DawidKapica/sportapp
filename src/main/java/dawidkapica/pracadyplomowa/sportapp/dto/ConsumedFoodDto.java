@@ -7,6 +7,9 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.Date;
 
 @Data
 @NoArgsConstructor
@@ -20,5 +23,9 @@ public class ConsumedFoodDto extends AbstractGeneratedIdDto<Integer> implements 
     private Integer userId;
 
     @NotNull Integer nutritionalProductId;
+
+    private LocalDate consumedFoodDate;
+
+    private LocalTime consumeFoodTime;
 
 }

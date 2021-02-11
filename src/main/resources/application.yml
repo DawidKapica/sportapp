@@ -1,0 +1,8 @@
+auth0:
+  audience: https://sportsapp/api
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dawidkapica.eu.auth0.com/

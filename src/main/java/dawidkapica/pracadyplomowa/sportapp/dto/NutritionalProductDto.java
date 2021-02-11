@@ -22,5 +22,14 @@ public class NutritionalProductDto extends AbstractGeneratedIdDto<Integer> imple
     private Integer calorificValue;
 
     @NotNull
+    private Integer carbohydratesValue;
+
+    @NotNull
+    private Integer proteinValue;
+
+    @NotNull
+    private Integer fatValue;
+
+    @NotNull
     private NutritionalProductCategoryDto nutritionalProductCategory;
 }
